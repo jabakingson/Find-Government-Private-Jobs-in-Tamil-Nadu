@@ -1,0 +1,4042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TN JobConnect | Tamil Nadu Jobs</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(15px);
+    box-shadow:0 3px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    min-height:72px;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:800;
+    color:#087f5b;
+}
+
+.logo-icon{
+    width:44px;
+    height:44px;
+    border-radius:13px;
+    background:linear-gradient(135deg,#0ca678,#087f5b);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#344054;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#087f5b;
+}
+
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.btn{
+    border:0;
+    padding:11px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    background:white;
+    border:1px solid #0ca678;
+    color:#087f5b;
+}
+
+.btn-green{
+    background:#087f5b;
+    color:white;
+}
+
+.btn-blue{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-red{
+    background:#dc2626;
+    color:white;
+}
+
+.mobile-menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:650px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-3;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(2,40,30,.88),
+            rgba(0,80,70,.70),
+            rgba(0,0,0,.55)
+        );
+    z-index:-2;
+}
+
+.hero-content{
+    width:min(1100px,92%);
+    text-align:center;
+    padding:80px 0;
+}
+
+.hero-badge{
+    display:inline-block;
+    padding:9px 17px;
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:50px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(8px);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(40px,6vw,72px);
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#69f0ae;
+}
+
+.hero p{
+    font-size:19px;
+    max-width:760px;
+    margin:0 auto 35px;
+    line-height:1.7;
+    color:#e8fff7;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box{
+    background:white;
+    padding:12px;
+    border-radius:18px;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr auto;
+    gap:10px;
+    max-width:1050px;
+    margin:auto;
+    box-shadow:0 15px 50px rgba(0,0,0,.25);
+}
+
+.search-box input,
+.search-box select{
+    width:100%;
+    border:1px solid #e4e7ec;
+    padding:15px;
+    border-radius:11px;
+    outline:none;
+    font-size:15px;
+}
+
+.search-box input:focus,
+.search-box select:focus{
+    border-color:#0ca678;
+}
+
+.search-button{
+    background:#087f5b;
+    color:white;
+    border:0;
+    padding:0 28px;
+    border-radius:11px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    background:white;
+    box-shadow:0 5px 25px rgba(0,0,0,.06);
+}
+
+.stats-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+    text-align:center;
+    padding:28px 10px;
+    border-right:1px solid #eee;
+}
+
+.stat:last-child{
+    border:0;
+}
+
+.stat h2{
+    color:#087f5b;
+    font-size:30px;
+}
+
+.stat p{
+    color:#667085;
+    margin-top:5px;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.container{
+    max-width:1250px;
+    width:92%;
+    margin:auto;
+}
+
+.section{
+    padding:75px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#667085;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:15px;
+}
+
+.category-card{
+    background:white;
+    padding:22px 12px;
+    border-radius:15px;
+    text-align:center;
+    cursor:pointer;
+    border:1px solid #e9edf2;
+    transition:.25s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    border-color:#0ca678;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.category-icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.category-card h3{
+    font-size:14px;
+}
+
+/* =========================
+   JOB SECTION
+========================= */
+
+.jobs-section{
+    background:#f8fafc;
+}
+
+.filter-panel{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:25px;
+    display:grid;
+    grid-template-columns:2fr repeat(4,1fr);
+    gap:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+.filter-panel input,
+.filter-panel select{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:9px;
+    outline:none;
+}
+
+.results-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+#resultsCount{
+    color:#667085;
+    font-weight:bold;
+}
+
+.job-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.job-card{
+    background:white;
+    border:1px solid #e7eaf0;
+    border-radius:18px;
+    padding:22px;
+    transition:.25s;
+    position:relative;
+}
+
+.job-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.09);
+}
+
+.job-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.job-icon{
+    width:52px;
+    height:52px;
+    background:#e9f8f2;
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+}
+
+.save-btn{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid #ddd;
+    background:white;
+    font-size:21px;
+    cursor:pointer;
+}
+
+.save-btn.saved{
+    color:#e11d48;
+    border-color:#fecdd3;
+    background:#fff1f2;
+}
+
+.job-card h3{
+    margin-top:18px;
+    font-size:20px;
+}
+
+.company{
+    margin-top:7px;
+    color:#475467;
+    font-weight:600;
+}
+
+.location{
+    margin-top:10px;
+    color:#667085;
+    font-size:14px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-top:15px;
+}
+
+.tag{
+    background:#f2f4f7;
+    color:#475467;
+    border-radius:20px;
+    padding:6px 9px;
+    font-size:12px;
+}
+
+.job-description{
+    margin:17px 0;
+    color:#667085;
+    line-height:1.5;
+    font-size:14px;
+    min-height:42px;
+}
+
+.job-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    border-top:1px solid #eee;
+    padding-top:17px;
+}
+
+.salary{
+    color:#087f5b;
+    font-weight:800;
+    font-size:14px;
+}
+
+.apply-btn{
+    border:0;
+    background:#087f5b;
+    color:white;
+    padding:10px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.no-results{
+    grid-column:1/-1;
+    text-align:center;
+    background:white;
+    padding:60px;
+    border-radius:18px;
+}
+
+.no-results-icon{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard{
+    display:none;
+    background:#eefbf6;
+    padding:50px 0;
+}
+
+.dashboard-box{
+    background:white;
+    border-radius:20px;
+    padding:28px;
+    box-shadow:0 8px 30px rgba(0,0,0,.06);
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:25px;
+}
+
+.profile-card{
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+    padding:25px;
+}
+
+.profile-avatar{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#087f5b;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.profile-card p{
+    margin:10px 0;
+    color:#667085;
+}
+
+.application-list{
+    display:grid;
+    gap:12px;
+}
+
+.application-item{
+    border:1px solid #e5e7eb;
+    padding:16px;
+    border-radius:12px;
+}
+
+.status{
+    display:inline-block;
+    background:#dcfce7;
+    color:#166534;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    margin-top:8px;
+}
+
+/* =========================
+   EMPLOYER
+========================= */
+
+.employer{
+    background:linear-gradient(135deg,#063b2d,#087f5b);
+    color:white;
+}
+
+.employer-box{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.employer-box h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.employer-box p{
+    line-height:1.7;
+    color:#d8fff0;
+    margin-bottom:25px;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    z-index:3000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal-box{
+    background:white;
+    width:min(500px,100%);
+    max-height:90vh;
+    overflow:auto;
+    border-radius:20px;
+    padding:28px;
+    position:relative;
+    animation:popup .2s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:scale(.9);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+    color:#667085;
+}
+
+.modal-box h2{
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:14px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:9px;
+    outline:none;
+}
+
+.form-group textarea{
+    min-height:90px;
+    resize:vertical;
+}
+
+.full-btn{
+    width:100%;
+    margin-top:8px;
+}
+
+.switch-text{
+    text-align:center;
+    margin-top:15px;
+    color:#667085;
+}
+
+.switch-text span{
+    color:#087f5b;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#101828;
+    color:white;
+    padding:45px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:30px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p,
+footer a{
+    color:#98a2b3;
+    line-height:1.8;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid #344054;
+    margin-top:30px;
+    padding-top:20px;
+    text-align:center;
+    color:#98a2b3;
+}
+
+/* =========================
+   TOAST
+========================= */
+
+.toast{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#101828;
+    color:white;
+    padding:15px 20px;
+    border-radius:10px;
+    z-index:5000;
+    display:none;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .job-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .filter-panel{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .search-box{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .search-button{
+        padding:15px;
+    }
+}
+
+@media(max-width:750px){
+
+    nav{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+
+    .nav-buttons{
+        display:none;
+    }
+
+    .stats-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat{
+        border-bottom:1px solid #eee;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .job-grid{
+        grid-template-columns:1fr;
+    }
+
+    .filter-panel{
+        grid-template-columns:1fr;
+    }
+
+    .search-box{
+        grid-template-columns:1fr;
+    }
+
+    .profile-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:700px;
+    }
+}
+
+@media(max-width:450px){
+
+    .navbar{
+        padding:10px 12px;
+    }
+
+    .logo{
+        font-size:17px;
+    }
+
+    .logo-icon{
+        width:38px;
+        height:38px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .section{
+        padding:50px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">💼</div>
+        TN JobConnect
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#categories">Categories</a>
+        <a href="#dashboard">My Account</a>
+        <a href="#employer">Employers</a>
+    </nav>
+
+    <div class="nav-buttons" id="authButtons">
+        <button class="btn btn-outline" onclick="openModal('loginModal')">
+            Login
+        </button>
+
+        <button class="btn btn-green" onclick="openModal('registerModal')">
+            Register
+        </button>
+    </div>
+
+    <div class="mobile-menu" onclick="toggleMobileMenu()">
+        ☰
+    </div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <!--
+        Replace this video URL with your own job-oriented MP4 video
+        if required.
+    -->
+
+    <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source
+            src="https://cdn.coverr.co/videos/coverr-a-man-working-on-a-laptop-1578/1080p.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🇮🇳 Tamil Nadu's Job Search Platform
+        </div>
+
+        <h1>
+            Find Your
+            <span>Dream Job</span>
+            in Tamil Nadu
+        </h1>
+
+        <p>
+            Search thousands of job opportunities across all
+            38 districts of Tamil Nadu.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Job title, skill or company..."
+                onkeydown="searchOnEnter(event)"
+            >
+
+            <select id="heroLocation">
+                <option value="all">All Districts</option>
+            </select>
+
+            <select id="heroCategory">
+                <option value="all">All Categories</option>
+            </select>
+
+            <button
+                class="search-button"
+                onclick="heroSearch()"
+            >
+                🔍 Search Jobs
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+<div class="stats-container">
+
+    <div class="stat">
+        <h2 id="jobStat">3,800+</h2>
+        <p>Jobs Available</p>
+    </div>
+
+    <div class="stat">
+        <h2>38</h2>
+        <p>Districts</p>
+    </div>
+
+    <div class="stat">
+        <h2>12</h2>
+        <p>Categories</p>
+    </div>
+
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Job Search</p>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section class="section" id="categories">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Explore Job Categories</h2>
+    <p>Find opportunities according to your skills.</p>
+</div>
+
+<div class="category-grid" id="categoryGrid"></div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     JOBS
+========================= -->
+
+<section class="section jobs-section" id="jobs">
+
+<div class="container">
+
+<div class="section-title">
+
+    <h2>Latest Job Opportunities</h2>
+
+    <p>
+        Search jobs across all Tamil Nadu districts.
+    </p>
+
+</div>
+
+
+<div class="filter-panel">
+
+    <input
+        type="text"
+        id="filterSearch"
+        placeholder="Search jobs..."
+        oninput="filterJobs()"
+    >
+
+    <select id="locationFilter" onchange="filterJobs()">
+        <option value="all">All Districts</option>
+    </select>
+
+    <select id="categoryFilter" onchange="filterJobs()">
+        <option value="all">All Categories</option>
+    </select>
+
+    <select id="typeFilter" onchange="filterJobs()">
+
+        <option value="all">
+            All Job Types
+        </option>
+
+        <option value="Full Time">
+            Full Time
+        </option>
+
+        <option value="Remote">
+            Remote
+        </option>
+
+    </select>
+
+    <select id="experienceFilter" onchange="filterJobs()">
+
+        <option value="all">
+            All Experience
+        </option>
+
+        <option value="0-2 Years">
+            0-2 Years
+        </option>
+
+        <option value="0-3 Years">
+            0-3 Years
+        </option>
+
+        <option value="0-5 Years">
+            0-5 Years
+        </option>
+
+        <option value="1-2 Years">
+            1-2 Years
+        </option>
+
+        <option value="1-3 Years">
+            1-3 Years
+        </option>
+
+        <option value="1-4 Years">
+            1-4 Years
+        </option>
+
+        <option value="1-5 Years">
+            1-5 Years
+        </option>
+
+        <option value="2-4 Years">
+            2-4 Years
+        </option>
+
+        <option value="2-5 Years">
+            2-5 Years
+        </option>
+
+        <option value="3-5 Years">
+            3-5 Years
+        </option>
+
+    </select>
+
+</div>
+
+
+<div class="results-bar">
+
+    <strong id="resultsCount">
+        3,800 jobs found
+    </strong>
+
+    <select
+        id="sortFilter"
+        onchange="filterJobs()"
+    >
+        <option value="default">
+            Sort: Recommended
+        </option>
+
+        <option value="high">
+            Salary: High to Low
+        </option>
+
+        <option value="low">
+            Salary: Low to High
+        </option>
+    </select>
+
+</div>
+
+
+<div class="job-grid" id="jobGrid"></div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     USER DASHBOARD
+========================= -->
+
+<section class="dashboard" id="dashboard">
+
+<div class="container">
+
+<div class="dashboard-box">
+
+    <div class="section-title">
+        <h2>My Account</h2>
+        <p>Your TN JobConnect profile and applications.</p>
+    </div>
+
+    <div class="profile-grid">
+
+        <div class="profile-card">
+
+            <div
+                class="profile-avatar"
+                id="profileAvatar"
+            >
+                👤
+            </div>
+
+            <h3 id="profileName">
+                Guest User
+            </h3>
+
+            <p>
+                📧
+                <span id="profileEmail">
+                    Not logged in
+                </span>
+            </p>
+
+            <p>
+                📱
+                <span id="profilePhone">
+                    -
+                </span>
+            </p>
+
+            <p>
+                📍
+                <span id="profileDistrict">
+                    -
+                </span>
+            </p>
+
+            <button
+                class="btn btn-red"
+                onclick="logout()"
+            >
+                Logout
+            </button>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <h3>📄 My Applications</h3>
+
+            <br>
+
+            <div
+                class="application-list"
+                id="applicationList"
+            >
+                <p>
+                    Login to see your applications.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EMPLOYER
+========================= -->
+
+<section class="section employer" id="employer">
+
+<div class="container">
+
+<div class="employer-box">
+
+    <h2>Are You an Employer?</h2>
+
+    <p>
+        Find talented candidates across all 38 districts
+        of Tamil Nadu. Post your vacancies and connect
+        with job seekers.
+    </p>
+
+    <button
+        class="btn"
+        style="background:white;color:#087f5b"
+        onclick="openEmployerModal()"
+    >
+        Post a Job
+    </button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+    <div>
+
+        <h3>💼 TN JobConnect</h3>
+
+        <p>
+            A Tamil Nadu focused job discovery platform
+            connecting job seekers and employers.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <p>
+            <a href="#home">Home</a>
+        </p>
+
+        <p>
+            <a href="#jobs">Find Jobs</a>
+        </p>
+
+        <p>
+            <a href="#categories">Categories</a>
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>For Job Seekers</h3>
+
+        <p>
+            <a href="#" onclick="openModal('registerModal')">
+                Register
+            </a>
+        </p>
+
+        <p>
+            <a href="#" onclick="openModal('loginModal')">
+                Login
+            </a>
+        </p>
+
+        <p>
+            <a href="#dashboard">
+                My Applications
+            </a>
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>For Employers</h3>
+
+        <p>
+            <a href="#employer">
+                Post a Job
+            </a>
+        </p>
+
+        <p>
+            <a href="#employer">
+                Find Candidates
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+
+    © 2026 TN JobConnect. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     LOGIN MODAL
+========================= -->
+
+<div class="modal" id="loginModal">
+
+<div class="modal-box">
+
+<span
+    class="close"
+    onclick="closeModal('loginModal')"
+>
+    ×
+</span>
+
+<h2>🔐 Login</h2>
+
+<form onsubmit="loginUser(event)">
+
+    <div class="form-group">
+
+        <label>Email</label>
+
+        <input
+            type="email"
+            id="loginEmail"
+            required
+            placeholder="Enter your email"
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Password</label>
+
+        <input
+            type="password"
+            id="loginPassword"
+            required
+            placeholder="Enter your password"
+        >
+
+    </div>
+
+    <button
+        class="btn btn-green full-btn"
+        type="submit"
+    >
+        Login
+    </button>
+
+</form>
+
+<div class="switch-text">
+
+    Don't have an account?
+
+    <span onclick="switchToRegister()">
+        Register
+    </span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     REGISTER MODAL
+========================= -->
+
+<div class="modal" id="registerModal">
+
+<div class="modal-box">
+
+<span
+    class="close"
+    onclick="closeModal('registerModal')"
+>
+    ×
+</span>
+
+<h2>👤 Create Account</h2>
+
+<form onsubmit="registerUser(event)">
+
+    <div class="form-group">
+
+        <label>Full Name</label>
+
+        <input
+            type="text"
+            id="registerName"
+            required
+            placeholder="Enter your full name"
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Email</label>
+
+        <input
+            type="email"
+            id="registerEmail"
+            required
+            placeholder="Enter email address"
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Phone Number</label>
+
+        <input
+            type="tel"
+            id="registerPhone"
+            required
+            placeholder="Enter phone number"
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>District</label>
+
+        <select
+            id="registerDistrict"
+            required
+        >
+            <option value="">
+                Select District
+            </option>
+        </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Password</label>
+
+        <input
+            type="password"
+            id="registerPassword"
+            required
+            minlength="6"
+            placeholder="Minimum 6 characters"
+        >
+
+    </div>
+
+
+    <button
+        class="btn btn-green full-btn"
+        type="submit"
+    >
+        Create Account
+    </button>
+
+</form>
+
+<div class="switch-text">
+
+    Already have an account?
+
+    <span onclick="switchToLogin()">
+        Login
+    </span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     APPLY MODAL
+========================= -->
+
+<div class="modal" id="applyModal">
+
+<div class="modal-box">
+
+<span
+    class="close"
+    onclick="closeModal('applyModal')"
+>
+    ×
+</span>
+
+<h2>📄 Apply for Job</h2>
+
+<div
+    id="applyDetails"
+    style="
+        background:#f2f4f7;
+        padding:15px;
+        border-radius:10px;
+        margin-bottom:20px;
+        line-height:1.7;
+    "
+></div>
+
+<form onsubmit="submitApplication(event)">
+
+    <div class="form-group">
+
+        <label>Full Name</label>
+
+        <input
+            type="text"
+            id="applicantName"
+            required
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Email</label>
+
+        <input
+            type="email"
+            id="applicantEmail"
+            required
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Phone</label>
+
+        <input
+            type="tel"
+            id="applicantPhone"
+            required
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Resume</label>
+
+        <input
+            type="file"
+            id="resume"
+            accept=".pdf,.doc,.docx"
+        >
+
+    </div>
+
+
+    <button
+        class="btn btn-green full-btn"
+        type="submit"
+    >
+        Submit Application
+    </button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     EMPLOYER MODAL
+========================= -->
+
+<div class="modal" id="employerModal">
+
+<div class="modal-box">
+
+<span
+    class="close"
+    onclick="closeModal('employerModal')"
+>
+    ×
+</span>
+
+<h2>🏢 Post a Job</h2>
+
+<form onsubmit="submitEmployerJob(event)">
+
+    <div class="form-group">
+
+        <label>Company Name</label>
+
+        <input
+            id="employerCompany"
+            required
+        >
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Employer Email</label>
+
+        <input
+            type="email"
+            id="employerEmail"
+            required
+        >
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Job Title</label>
+
+        <input
+            id="employerJobTitle"
+            required
+        >
+
+    </div>
+
+    <div class="form-group">
+
+        <label>District</label>
+
+        <select
+            id="employerDistrict"
+            required
+        ></select>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Salary</label>
+
+        <input
+            id="employerSalary"
+            placeholder="Example: ₹25,000 - ₹40,000"
+        >
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Job Description</label>
+
+        <textarea
+            id="employerDescription"
+            required
+        ></textarea>
+
+    </div>
+
+    <button
+        class="btn btn-green full-btn"
+        type="submit"
+    >
+        Submit Job
+    </button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<div class="toast" id="toast"></div>
+
+
+<script>
+
+/* =========================================================
+   GOOGLE SHEETS CONFIGURATION
+========================================================= */
+
+/*
+IMPORTANT:
+
+Do NOT put your Google Sheet EDIT URL here.
+
+Your Google Sheet:
+https://docs.google.com/spreadsheets/d/1Px_DkqpQuMRRIRL0Z3Jf6HqT_Ngncj9u6JWlV990HuM/edit
+
+After creating Google Apps Script Web App,
+paste the Web App URL below.
+
+Example:
+
+const GOOGLE_SCRIPT_URL =
+"https://script.google.com/macros/s/XXXXXXXXXXXX/exec";
+*/
+
+const GOOGLE_SCRIPT_URL = "";
+
+
+/* =========================================================
+   38 TAMIL NADU DISTRICTS
+========================================================= */
+
+const districts = [
+
+"Ariyalur",
+"Chengalpattu",
+"Chennai",
+"Coimbatore",
+"Cuddalore",
+"Dharmapuri",
+"Dindigul",
+"Erode",
+"Kallakurichi",
+"Kancheepuram",
+"Karur",
+"Krishnagiri",
+"Madurai",
+"Mayiladuthurai",
+"Nagapattinam",
+"Namakkal",
+"Nilgiris",
+"Perambalur",
+"Pudukkottai",
+"Ramanathapuram",
+"Ranipet",
+"Salem",
+"Sivaganga",
+"Tenkasi",
+"Thanjavur",
+"Theni",
+"Thoothukudi",
+"Tiruchirappalli",
+"Tirunelveli",
+"Tirupathur",
+"Tiruppur",
+"Tiruvallur",
+"Tiruvannamalai",
+"Tiruvarur",
+"Vellore",
+"Viluppuram",
+"Virudhunagar",
+"Kanyakumari"
+
+];
+
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
+const categories = [
+
+"IT & Software",
+"Healthcare",
+"Education",
+"Engineering",
+"Banking",
+"Sales",
+"Marketing",
+"Retail",
+"Hospitality",
+"Administration",
+"Logistics",
+"Agriculture"
+
+];
+
+
+const categoryIcons = {
+
+"IT & Software":"💻",
+"Healthcare":"🏥",
+"Education":"🎓",
+"Engineering":"⚙️",
+"Banking":"🏦",
+"Sales":"📈",
+"Marketing":"📣",
+"Retail":"🛒",
+"Hospitality":"🏨",
+"Administration":"📋",
+"Logistics":"🚚",
+"Agriculture":"🌾"
+
+};
+
+
+/* =========================================================
+   JOB TEMPLATES
+========================================================= */
+
+const jobTemplates = [
+
+{
+title:"Web Developer",
+category:"IT & Software",
+salary:"₹30,000 - ₹50,000",
+salaryValue:50000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["HTML","CSS","JavaScript","React"],
+description:"Develop responsive websites and web applications.",
+icon:"💻"
+},
+
+{
+title:"Frontend Developer",
+category:"IT & Software",
+salary:"₹35,000 - ₹60,000",
+salaryValue:60000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["HTML","CSS","JavaScript","React"],
+description:"Build modern frontend web applications.",
+icon:"🖥️"
+},
+
+{
+title:"Full Stack Developer",
+category:"IT & Software",
+salary:"₹40,000 - ₹70,000",
+salaryValue:70000,
+experience:"2-4 Years",
+type:"Full Time",
+skills:["Node.js","React","MySQL"],
+description:"Develop complete web applications.",
+icon:"🚀"
+},
+
+{
+title:"Software Developer",
+category:"IT & Software",
+salary:"₹35,000 - ₹55,000",
+salaryValue:55000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Java","Python","SQL"],
+description:"Develop enterprise software applications.",
+icon:"💻"
+},
+
+{
+title:"Python Developer",
+category:"IT & Software",
+salary:"₹35,000 - ₹58,000",
+salaryValue:58000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Python","Django","SQL"],
+description:"Develop Python web applications.",
+icon:"🐍"
+},
+
+{
+title:"Java Developer",
+category:"IT & Software",
+salary:"₹38,000 - ₹65,000",
+salaryValue:65000,
+experience:"2-4 Years",
+type:"Full Time",
+skills:["Java","Spring Boot"],
+description:"Develop enterprise Java applications.",
+icon:"☕"
+},
+
+{
+title:"Data Analyst",
+category:"IT & Software",
+salary:"₹35,000 - ₹58,000",
+salaryValue:58000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Excel","SQL","Python"],
+description:"Analyze business data and prepare reports.",
+icon:"📊"
+},
+
+{
+title:"UI UX Designer",
+category:"IT & Software",
+salary:"₹30,000 - ₹50,000",
+salaryValue:50000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Figma","UI","UX"],
+description:"Design attractive user-friendly interfaces.",
+icon:"🎨"
+},
+
+{
+title:"Mobile App Developer",
+category:"IT & Software",
+salary:"₹30,000 - ₹55,000",
+salaryValue:55000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Flutter","Dart"],
+description:"Create Android and mobile applications.",
+icon:"📱"
+},
+
+{
+title:"Cloud Engineer",
+category:"IT & Software",
+salary:"₹45,000 - ₹75,000",
+salaryValue:75000,
+experience:"2-5 Years",
+type:"Full Time",
+skills:["AWS","Azure","Cloud"],
+description:"Manage cloud infrastructure and services.",
+icon:"☁️"
+},
+
+{
+title:"Staff Nurse",
+category:"Healthcare",
+salary:"₹25,000 - ₹38,000",
+salaryValue:38000,
+experience:"0-3 Years",
+type:"Full Time",
+skills:["Nursing","Patient Care"],
+description:"Provide quality patient care.",
+icon:"🏥"
+},
+
+{
+title:"Pharmacist",
+category:"Healthcare",
+salary:"₹22,000 - ₹35,000",
+salaryValue:35000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Pharmacy"],
+description:"Manage pharmacy operations and medicines.",
+icon:"💊"
+},
+
+{
+title:"Lab Technician",
+category:"Healthcare",
+salary:"₹20,000 - ₹32,000",
+salaryValue:32000,
+experience:"0-3 Years",
+type:"Full Time",
+skills:["Laboratory"],
+description:"Perform laboratory tests and maintain records.",
+icon:"🔬"
+},
+
+{
+title:"Medical Receptionist",
+category:"Healthcare",
+salary:"₹18,000 - ₹28,000",
+salaryValue:28000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Communication"],
+description:"Handle hospital reception and patient records.",
+icon:"🏥"
+},
+
+{
+title:"School Teacher",
+category:"Education",
+salary:"₹20,000 - ₹32,000",
+salaryValue:32000,
+experience:"0-5 Years",
+type:"Full Time",
+skills:["Teaching","English"],
+description:"Teach students and support academic activities.",
+icon:"🎓"
+},
+
+{
+title:"Mathematics Teacher",
+category:"Education",
+salary:"₹25,000 - ₹40,000",
+salaryValue:40000,
+experience:"1-5 Years",
+type:"Full Time",
+skills:["Mathematics"],
+description:"Teach mathematics to school students.",
+icon:"📐"
+},
+
+{
+title:"Computer Science Teacher",
+category:"Education",
+salary:"₹25,000 - ₹42,000",
+salaryValue:42000,
+experience:"1-4 Years",
+type:"Full Time",
+skills:["Computer Science"],
+description:"Teach programming and computer science.",
+icon:"💻"
+},
+
+{
+title:"Online Tutor",
+category:"Education",
+salary:"₹15,000 - ₹30,000",
+salaryValue:30000,
+experience:"0-3 Years",
+type:"Remote",
+skills:["Teaching"],
+description:"Conduct online classes for students.",
+icon:"📚"
+},
+
+{
+title:"Mechanical Engineer",
+category:"Engineering",
+salary:"₹30,000 - ₹48,000",
+salaryValue:48000,
+experience:"2-4 Years",
+type:"Full Time",
+skills:["AutoCAD","Mechanical"],
+description:"Manage mechanical engineering projects.",
+icon:"⚙️"
+},
+
+{
+title:"Civil Engineer",
+category:"Engineering",
+salary:"₹30,000 - ₹50,000",
+salaryValue:50000,
+experience:"2-5 Years",
+type:"Full Time",
+skills:["AutoCAD","Civil"],
+description:"Manage construction projects.",
+icon:"🏗️"
+},
+
+{
+title:"Electrical Engineer",
+category:"Engineering",
+salary:"₹32,000 - ₹52,000",
+salaryValue:52000,
+experience:"2-4 Years",
+type:"Full Time",
+skills:["Electrical"],
+description:"Design and maintain electrical systems.",
+icon:"⚡"
+},
+
+{
+title:"Quality Engineer",
+category:"Engineering",
+salary:"₹28,000 - ₹45,000",
+salaryValue:45000,
+experience:"1-4 Years",
+type:"Full Time",
+skills:["Quality"],
+description:"Monitor manufacturing quality standards.",
+icon:"✅"
+},
+
+{
+title:"Accountant",
+category:"Banking",
+salary:"₹22,000 - ₹34,000",
+salaryValue:34000,
+experience:"1-2 Years",
+type:"Full Time",
+skills:["Tally","Excel"],
+description:"Handle accounts and financial records.",
+icon:"💰"
+},
+
+{
+title:"Bank Executive",
+category:"Banking",
+salary:"₹25,000 - ₹40,000",
+salaryValue:40000,
+experience:"0-3 Years",
+type:"Full Time",
+skills:["Banking"],
+description:"Handle customer banking services.",
+icon:"🏦"
+},
+
+{
+title:"Loan Officer",
+category:"Banking",
+salary:"₹25,000 - ₹38,000",
+salaryValue:38000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Finance","Loans"],
+description:"Process loan applications.",
+icon:"💳"
+},
+
+{
+title:"Sales Executive",
+category:"Sales",
+salary:"₹18,000 - ₹30,000",
+salaryValue:30000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Sales"],
+description:"Generate sales and customer relationships.",
+icon:"📈"
+},
+
+{
+title:"Sales Manager",
+category:"Sales",
+salary:"₹35,000 - ₹55,000",
+salaryValue:55000,
+experience:"3-5 Years",
+type:"Full Time",
+skills:["Sales","Management"],
+description:"Manage sales teams and targets.",
+icon:"📈"
+},
+
+{
+title:"Business Development Executive",
+category:"Sales",
+salary:"₹25,000 - ₹42,000",
+salaryValue:42000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Sales","Business"],
+description:"Develop new business opportunities.",
+icon:"🤝"
+},
+
+{
+title:"Marketing Executive",
+category:"Marketing",
+salary:"₹22,000 - ₹35,000",
+salaryValue:35000,
+experience:"0-3 Years",
+type:"Full Time",
+skills:["Marketing"],
+description:"Execute marketing campaigns.",
+icon:"📣"
+},
+
+{
+title:"Digital Marketing Executive",
+category:"Marketing",
+salary:"₹25,000 - ₹40,000",
+salaryValue:40000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["SEO","Social Media"],
+description:"Manage digital marketing campaigns.",
+icon:"📱"
+},
+
+{
+title:"SEO Specialist",
+category:"Marketing",
+salary:"₹25,000 - ₹42,000",
+salaryValue:42000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["SEO"],
+description:"Improve website search visibility.",
+icon:"🔎"
+},
+
+{
+title:"Store Manager",
+category:"Retail",
+salary:"₹25,000 - ₹40,000",
+salaryValue:40000,
+experience:"2-5 Years",
+type:"Full Time",
+skills:["Retail","Management"],
+description:"Manage retail store operations.",
+icon:"🛍️"
+},
+
+{
+title:"Retail Sales Associate",
+category:"Retail",
+salary:"₹16,000 - ₹25,000",
+salaryValue:25000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Sales"],
+description:"Assist customers with purchases.",
+icon:"🛒"
+},
+
+{
+title:"Cashier",
+category:"Retail",
+salary:"₹15,000 - ₹23,000",
+salaryValue:23000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Cash Handling"],
+description:"Handle billing and customer payments.",
+icon:"💵"
+},
+
+{
+title:"Hotel Manager",
+category:"Hospitality",
+salary:"₹30,000 - ₹50,000",
+salaryValue:50000,
+experience:"3-5 Years",
+type:"Full Time",
+skills:["Management"],
+description:"Manage hotel operations and staff.",
+icon:"🏨"
+},
+
+{
+title:"Front Office Executive",
+category:"Hospitality",
+salary:"₹18,000 - ₹30,000",
+salaryValue:30000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Communication"],
+description:"Handle hotel reception and guests.",
+icon:"🏨"
+},
+
+{
+title:"Chef",
+category:"Hospitality",
+salary:"₹25,000 - ₹45,000",
+salaryValue:45000,
+experience:"2-5 Years",
+type:"Full Time",
+skills:["Cooking"],
+description:"Prepare food and manage kitchen activities.",
+icon:"👨‍🍳"
+},
+
+{
+title:"Office Administrator",
+category:"Administration",
+salary:"₹22,000 - ₹35,000",
+salaryValue:35000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Administration","Excel"],
+description:"Manage office administration activities.",
+icon:"📋"
+},
+
+{
+title:"HR Executive",
+category:"Administration",
+salary:"₹25,000 - ₹40,000",
+salaryValue:40000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["HR","Recruitment"],
+description:"Handle recruitment and HR activities.",
+icon:"👥"
+},
+
+{
+title:"Receptionist",
+category:"Administration",
+salary:"₹16,000 - ₹25,000",
+salaryValue:25000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Communication"],
+description:"Handle office reception and visitors.",
+icon:"☎️"
+},
+
+{
+title:"Logistics Executive",
+category:"Logistics",
+salary:"₹22,000 - ₹35,000",
+salaryValue:35000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Logistics"],
+description:"Coordinate shipments and logistics activities.",
+icon:"🚚"
+},
+
+{
+title:"Delivery Executive",
+category:"Logistics",
+salary:"₹18,000 - ₹30,000",
+salaryValue:30000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Delivery","Driving"],
+description:"Deliver customer orders safely.",
+icon:"🛵"
+},
+
+{
+title:"Warehouse Manager",
+category:"Logistics",
+salary:"₹30,000 - ₹48,000",
+salaryValue:48000,
+experience:"3-5 Years",
+type:"Full Time",
+skills:["Warehouse","Management"],
+description:"Manage warehouse operations and staff.",
+icon:"📦"
+},
+
+{
+title:"Agriculture Officer",
+category:"Agriculture",
+salary:"₹25,000 - ₹40,000",
+salaryValue:40000,
+experience:"1-3 Years",
+type:"Full Time",
+skills:["Agriculture"],
+description:"Support farmers and agricultural activities.",
+icon:"🌾"
+},
+
+{
+title:"Agriculture Field Assistant",
+category:"Agriculture",
+salary:"₹18,000 - ₹28,000",
+salaryValue:28000,
+experience:"0-2 Years",
+type:"Full Time",
+skills:["Agriculture","Field Work"],
+description:"Assist agricultural field operations.",
+icon:"🌱"
+},
+
+{
+title:"Farm Supervisor",
+category:"Agriculture",
+salary:"₹22,000 - ₹35,000",
+salaryValue:35000,
+experience:"1-4 Years",
+type:"Full Time",
+skills:["Farming"],
+description:"Supervise farm workers and operations.",
+icon:"🚜"
+}
+
+];
+
+
+/* =========================================================
+   GENERATE 3,800 JOBS
+========================================================= */
+
+let jobs = [];
+
+let jobId = 1;
+
+districts.forEach((district,districtIndex)=>{
+
+    for(let i=0;i<100;i++){
+
+        const template =
+            jobTemplates[
+                (districtIndex * 100 + i) %
+                jobTemplates.length
+            ];
+
+        jobs.push({
+
+            id:jobId++,
+
+            title:template.title,
+
+            company:
+                district +
+                " " +
+                template.category.replace("&","") +
+                " Solutions " +
+                (i+1),
+
+            location:district,
+
+            category:template.category,
+
+            salary:template.salary,
+
+            salaryValue:template.salaryValue,
+
+            experience:template.experience,
+
+            type:template.type,
+
+            skills:[...template.skills],
+
+            description:
+                template.description +
+                " Job opportunity available in " +
+                district +
+                ".",
+
+            icon:template.icon
+
+        });
+
+    }
+
+});
+
+
+/* =========================================================
+   ESCAPE HTML
+========================================================= */
+
+function escapeHTML(value){
+
+    return String(value)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================================
+   LOCAL STORAGE
+========================================================= */
+
+function getUsers(){
+
+    try{
+
+        return JSON.parse(
+            localStorage.getItem("tnUsers") || "[]"
+        );
+
+    }catch(e){
+
+        return [];
+
+    }
+
+}
+
+
+function getCurrentUser(){
+
+    try{
+
+        return JSON.parse(
+            localStorage.getItem("tnCurrentUser") || "null"
+        );
+
+    }catch(e){
+
+        return null;
+
+    }
+
+}
+
+
+function getApplications(){
+
+    try{
+
+        return JSON.parse(
+            localStorage.getItem("tnApplications") || "[]"
+        );
+
+    }catch(e){
+
+        return [];
+
+    }
+
+}
+
+
+function getSavedJobs(){
+
+    try{
+
+        return JSON.parse(
+            localStorage.getItem("tnSavedJobs") || "[]"
+        );
+
+    }catch(e){
+
+        return [];
+
+    }
+
+}
+
+
+/* =========================================================
+   GOOGLE SHEET SEND
+========================================================= */
+
+async function sendToGoogleSheet(data){
+
+    if(!GOOGLE_SCRIPT_URL){
+
+        console.log(
+            "Google Apps Script URL not configured.",
+            data
+        );
+
+        return {
+            success:false,
+            localOnly:true
+        };
+
+    }
+
+    try{
+
+        const response =
+            await fetch(
+                GOOGLE_SCRIPT_URL,
+                {
+                    method:"POST",
+                    mode:"no-cors",
+                    headers:{
+                        "Content-Type":
+                        "text/plain;charset=utf-8"
+                    },
+                    body:JSON.stringify(data)
+                }
+            );
+
+        return {
+            success:true
+        };
+
+    }catch(error){
+
+        console.error(
+            "Google Sheet error:",
+            error
+        );
+
+        return {
+            success:false
+        };
+
+    }
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+    initializeFilters();
+
+    createCategoryCards();
+
+    displayJobs(jobs);
+
+    updateAccountUI();
+
+    document.getElementById("jobStat")
+        .textContent =
+        jobs.length.toLocaleString() + "+";
+
+});
+
+
+/* =========================================================
+   FILTER INITIALIZATION
+========================================================= */
+
+function initializeFilters(){
+
+    const locationFilter =
+        document.getElementById("locationFilter");
+
+    const heroLocation =
+        document.getElementById("heroLocation");
+
+    const registerDistrict =
+        document.getElementById("registerDistrict");
+
+    const employerDistrict =
+        document.getElementById("employerDistrict");
+
+
+    districts.forEach(district=>{
+
+        locationFilter.innerHTML +=
+            `<option value="${escapeHTML(district)}">
+                ${escapeHTML(district)}
+            </option>`;
+
+        heroLocation.innerHTML +=
+            `<option value="${escapeHTML(district)}">
+                ${escapeHTML(district)}
+            </option>`;
+
+        registerDistrict.innerHTML +=
+            `<option value="${escapeHTML(district)}">
+                ${escapeHTML(district)}
+            </option>`;
+
+        employerDistrict.innerHTML +=
+            `<option value="${escapeHTML(district)}">
+                ${escapeHTML(district)}
+            </option>`;
+
+    });
+
+
+    const categoryFilter =
+        document.getElementById("categoryFilter");
+
+    const heroCategory =
+        document.getElementById("heroCategory");
+
+
+    categories.forEach(category=>{
+
+        categoryFilter.innerHTML +=
+            `<option value="${escapeHTML(category)}">
+                ${escapeHTML(category)}
+            </option>`;
+
+        heroCategory.innerHTML +=
+            `<option value="${escapeHTML(category)}">
+                ${escapeHTML(category)}
+            </option>`;
+
+    });
+
+}
+
+
+/* =========================================================
+   CATEGORY CARDS
+========================================================= */
+
+function createCategoryCards(){
+
+    const grid =
+        document.getElementById("categoryGrid");
+
+    grid.innerHTML =
+        categories.map(category=>`
+
+        <div
+            class="category-card"
+            onclick="categorySearch('${category.replace(/'/g,"\\'")}')"
+        >
+
+            <div class="category-icon">
+                ${categoryIcons[category]}
+            </div>
+
+            <h3>
+                ${escapeHTML(category)}
+            </h3>
+
+        </div>
+
+    `).join("");
+
+}
+
+
+/* =========================================================
+   DISPLAY JOBS
+========================================================= */
+
+function displayJobs(list){
+
+    const grid =
+        document.getElementById("jobGrid");
+
+    const count =
+        document.getElementById("resultsCount");
+
+
+    count.textContent =
+        list.length.toLocaleString() +
+        (list.length===1
+            ? " job found"
+            : " jobs found");
+
+
+    if(!list.length){
+
+        grid.innerHTML = `
+
+            <div class="no-results">
+
+                <div class="no-results-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    No jobs found
+                </h3>
+
+                <p>
+                    Try another job title,
+                    skill, company or district.
+                </p>
+
+                <br>
+
+                <button
+                    class="btn btn-green"
+                    onclick="clearFilters()"
+                >
+                    Show All Jobs
+                </button>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    grid.innerHTML =
+        list
+        .map(job=>createJobCard(job))
+        .join("");
+
+}
+
+
+/* =========================================================
+   JOB CARD
+========================================================= */
+
+function createJobCard(job){
+
+    const saved =
+        getSavedJobs().includes(job.id);
+
+    return `
+
+    <article class="job-card">
+
+        <div class="job-top">
+
+            <div class="job-icon">
+                ${job.icon}
+            </div>
+
+            <button
+                class="save-btn ${saved ? "saved":""}"
+                onclick="toggleSave(${job.id})"
+            >
+                ${saved ? "♥":"♡"}
+            </button>
+
+        </div>
+
+        <h3>
+            ${escapeHTML(job.title)}
+        </h3>
+
+        <div class="company">
+            ${escapeHTML(job.company)}
+        </div>
+
+        <div class="location">
+
+            📍 ${escapeHTML(job.location)}
+
+            &nbsp; • &nbsp;
+
+            ${escapeHTML(job.type)}
+
+        </div>
+
+        <div class="tags">
+
+            <span class="tag">
+                ${escapeHTML(job.category)}
+            </span>
+
+            <span class="tag">
+                ${escapeHTML(job.experience)}
+            </span>
+
+            ${job.skills
+                .slice(0,2)
+                .map(skill=>`
+
+                    <span class="tag">
+                        ${escapeHTML(skill)}
+                    </span>
+
+                `)
+                .join("")
+            }
+
+        </div>
+
+        <p class="job-description">
+            ${escapeHTML(job.description)}
+        </p>
+
+        <div class="job-bottom">
+
+            <div class="salary">
+                ${escapeHTML(job.salary)}
+            </div>
+
+            <button
+                class="apply-btn"
+                onclick="openApply(${job.id})"
+            >
+                Apply Now
+            </button>
+
+        </div>
+
+    </article>
+
+    `;
+
+}
+
+
+/* =========================================================
+   HERO SEARCH
+========================================================= */
+
+function heroSearch(){
+
+    const search =
+        document.getElementById("searchInput")
+        .value;
+
+    const location =
+        document.getElementById("heroLocation")
+        .value;
+
+    const category =
+        document.getElementById("heroCategory")
+        .value;
+
+
+    document.getElementById("filterSearch")
+        .value = search;
+
+    document.getElementById("locationFilter")
+        .value = location;
+
+    document.getElementById("categoryFilter")
+        .value = category;
+
+
+    filterJobs();
+
+
+    document.getElementById("jobs")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+/* =========================================================
+   ENTER SEARCH
+========================================================= */
+
+function searchOnEnter(event){
+
+    if(event.key==="Enter"){
+
+        heroSearch();
+
+    }
+
+}
+
+
+/* =========================================================
+   FILTER JOBS
+========================================================= */
+
+function filterJobs(){
+
+    const search =
+        document.getElementById("filterSearch")
+        .value
+        .trim()
+        .toLowerCase();
+
+
+    const location =
+        document.getElementById("locationFilter")
+        .value;
+
+
+    const category =
+        document.getElementById("categoryFilter")
+        .value;
+
+
+    const type =
+        document.getElementById("typeFilter")
+        .value;
+
+
+    const experience =
+        document.getElementById("experienceFilter")
+        .value;
+
+
+    const sort =
+        document.getElementById("sortFilter")
+        .value;
+
+
+    let filtered =
+        jobs.filter(job=>{
+
+            const text = (
+
+                job.title + " " +
+                job.company + " " +
+                job.location + " " +
+                job.category + " " +
+                job.description + " " +
+                job.skills.join(" ") + " " +
+                job.experience + " " +
+                job.type
+
+            ).toLowerCase();
+
+
+            return (
+
+                (!search || text.includes(search)) &&
+
+                (location==="all" ||
+                 job.location===location) &&
+
+                (category==="all" ||
+                 job.category===category) &&
+
+                (type==="all" ||
+                 job.type===type) &&
+
+                (experience==="all" ||
+                 job.experience===experience)
+
+            );
+
+        });
+
+
+    if(sort==="high"){
+
+        filtered.sort(
+            (a,b)=>
+            b.salaryValue-a.salaryValue
+        );
+
+    }
+
+
+    if(sort==="low"){
+
+        filtered.sort(
+            (a,b)=>
+            a.salaryValue-b.salaryValue
+        );
+
+    }
+
+
+    displayJobs(filtered);
+
+}
+
+
+/* =========================================================
+   CATEGORY SEARCH
+========================================================= */
+
+function categorySearch(category){
+
+    document.getElementById("categoryFilter")
+        .value = category;
+
+    document.getElementById("filterSearch")
+        .value = "";
+
+    filterJobs();
+
+    document.getElementById("jobs")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+/* =========================================================
+   CLEAR
+========================================================= */
+
+function clearFilters(){
+
+    document.getElementById("filterSearch")
+        .value = "";
+
+    document.getElementById("locationFilter")
+        .value = "all";
+
+    document.getElementById("categoryFilter")
+        .value = "all";
+
+    document.getElementById("typeFilter")
+        .value = "all";
+
+    document.getElementById("experienceFilter")
+        .value = "all";
+
+    document.getElementById("sortFilter")
+        .value = "default";
+
+    displayJobs(jobs);
+
+}
+
+
+/* =========================================================
+   SAVE JOB
+========================================================= */
+
+async function toggleSave(id){
+
+    const user =
+        getCurrentUser();
+
+    if(!user){
+
+        showMessage(
+            "Please login to save jobs."
+        );
+
+        openModal("loginModal");
+
+        return;
+
+    }
+
+
+    let saved =
+        getSavedJobs();
+
+
+    if(saved.includes(id)){
+
+        saved =
+            saved.filter(
+                jobId=>jobId!==id
+            );
+
+        showMessage(
+            "Job removed from saved jobs."
+        );
+
+    }else{
+
+        saved.push(id);
+
+        showMessage(
+            "Job saved successfully!"
+        );
+
+
+        const job =
+            jobs.find(j=>j.id===id);
+
+
+        await sendToGoogleSheet({
+
+            action:"saveJob",
+
+            email:user.email,
+
+            name:user.name,
+
+            jobId:job.id,
+
+            jobTitle:job.title,
+
+            company:job.company,
+
+            district:job.location,
+
+            date:new Date().toLocaleString()
+
+        });
+
+    }
+
+
+    localStorage.setItem(
+        "tnSavedJobs",
+        JSON.stringify(saved)
+    );
+
+
+    filterJobs();
+
+}
+
+
+/* =========================================================
+   REGISTER
+========================================================= */
+
+async function registerUser(event){
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("registerName")
+        .value.trim();
+
+    const email =
+        document.getElementById("registerEmail")
+        .value.trim()
+        .toLowerCase();
+
+    const phone =
+        document.getElementById("registerPhone")
+        .value.trim();
+
+    const district =
+        document.getElementById("registerDistrict")
+        .value;
+
+    const password =
+        document.getElementById("registerPassword")
+        .value;
+
+
+    const users =
+        getUsers();
+
+
+    if(users.some(u=>u.email===email)){
+
+        alert(
+            "This email is already registered."
+        );
+
+        return;
+
+    }
+
+
+    const user = {
+
+        name,
+        email,
+        phone,
+        district,
+
+        /*
+         WARNING:
+         This localStorage password is only for demo use.
+         Use server-side authentication for production.
+        */
+
+        password,
+
+        createdAt:
+            new Date().toISOString()
+
+    };
+
+
+    users.push(user);
+
+
+    localStorage.setItem(
+        "tnUsers",
+        JSON.stringify(users)
+    );
+
+
+    localStorage.setItem(
+        "tnCurrentUser",
+        JSON.stringify(user)
+    );
+
+
+    await sendToGoogleSheet({
+
+        action:"register",
+
+        name,
+
+        email,
+
+        phone,
+
+        district,
+
+        createdAt:
+            new Date().toLocaleString()
+
+    });
+
+
+    closeModal("registerModal");
+
+    updateAccountUI();
+
+    document.getElementById("registerName")
+        .value="";
+
+    document.getElementById("registerEmail")
+        .value="";
+
+    document.getElementById("registerPhone")
+        .value="";
+
+    document.getElementById("registerPassword")
+        .value="";
+
+
+    showMessage(
+        "Registration successful!"
+    );
+
+
+    setTimeout(()=>{
+
+        document.getElementById("dashboard")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
+
+    },500);
+
+}
+
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+function loginUser(event){
+
+    event.preventDefault();
+
+
+    const email =
+        document.getElementById("loginEmail")
+        .value.trim()
+        .toLowerCase();
+
+    const password =
+        document.getElementById("loginPassword")
+        .value;
+
+
+    const users =
+        getUsers();
+
+
+    const user =
+        users.find(
+            u =>
+            u.email===email &&
+            u.password===password
+        );
+
+
+    if(!user){
+
+        alert(
+            "Invalid email or password."
+        );
+
+        return;
+
+    }
+
+
+    localStorage.setItem(
+        "tnCurrentUser",
+        JSON.stringify(user)
+    );
+
+
+    closeModal("loginModal");
+
+    updateAccountUI();
+
+    showMessage(
+        "Login successful. Welcome " +
+        user.name + "!"
+    );
+
+
+    setTimeout(()=>{
+
+        document.getElementById("dashboard")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
+
+    },500);
+
+}
+
+
+/* =========================================================
+   UPDATE ACCOUNT
+========================================================= */
+
+function updateAccountUI(){
+
+    const user =
+        getCurrentUser();
+
+    const buttons =
+        document.getElementById("authButtons");
+
+
+    if(!user){
+
+        buttons.innerHTML = `
+
+            <button
+                class="btn btn-outline"
+                onclick="openModal('loginModal')"
+            >
+                Login
+            </button>
+
+            <button
+                class="btn btn-green"
+                onclick="openModal('registerModal')"
+            >
+                Register
+            </button>
+
+        `;
+
+        document.getElementById("profileName")
+            .textContent="Guest User";
+
+        document.getElementById("profileEmail")
+            .textContent="Not logged in";
+
+        document.getElementById("profilePhone")
+            .textContent="-";
+
+        document.getElementById("profileDistrict")
+            .textContent="-";
+
+        document.getElementById("applicationList")
+            .innerHTML =
+            "<p>Login to see your applications.</p>";
+
+        return;
+
+    }
+
+
+    buttons.innerHTML = `
+
+        <button
+            class="btn btn-outline"
+            onclick="showDashboard()"
+        >
+            👤 ${escapeHTML(user.name)}
+        </button>
+
+        <button
+            class="btn btn-red"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    `;
+
+
+    document.getElementById("profileName")
+        .textContent=user.name;
+
+    document.getElementById("profileEmail")
+        .textContent=user.email;
+
+    document.getElementById("profilePhone")
+        .textContent=user.phone;
+
+    document.getElementById("profileDistrict")
+        .textContent=user.district;
+
+
+    document.getElementById("profileAvatar")
+        .textContent =
+        user.name.charAt(0).toUpperCase();
+
+
+    loadApplications();
+
+}
+
+
+/* =========================================================
+   APPLICATION
+========================================================= */
+
+let selectedJob = null;
+
+
+function openApply(id){
+
+    const user =
+        getCurrentUser();
+
+
+    if(!user){
+
+        showMessage(
+            "Please login before applying."
+        );
+
+        openModal("loginModal");
+
+        return;
+
+    }
+
+
+    selectedJob =
+        jobs.find(job=>job.id===id);
+
+
+    if(!selectedJob){
+        return;
+    }
+
+
+    document.getElementById("applyDetails")
+        .innerHTML = `
+
+        <strong>
+            ${escapeHTML(selectedJob.title)}
+        </strong>
+
+        <br>
+
+        ${escapeHTML(selectedJob.company)}
+
+        <br>
+
+        📍 ${escapeHTML(selectedJob.location)}
+
+        <br>
+
+        💰 ${escapeHTML(selectedJob.salary)}
+
+    `;
+
+
+    document.getElementById("applicantName")
+        .value=user.name;
+
+    document.getElementById("applicantEmail")
+        .value=user.email;
+
+    document.getElementById("applicantPhone")
+        .value=user.phone;
+
+
+    openModal("applyModal");
+
+}
+
+
+/* =========================================================
+   SUBMIT APPLICATION
+========================================================= */
+
+async function submitApplication(event){
+
+    event.preventDefault();
+
+
+    const user =
+        getCurrentUser();
+
+
+    if(!user){
+
+        alert("Please login first.");
+
+        return;
+
+    }
+
+
+    if(!selectedJob){
+
+        alert("Job not selected.");
+
+        return;
+
+    }
+
+
+    const application = {
+
+        id:Date.now(),
+
+        email:user.email,
+
+        applicantName:
+            document.getElementById("applicantName")
+            .value.trim(),
+
+        phone:
+            document.getElementById("applicantPhone")
+            .value.trim(),
+
+        jobId:selectedJob.id,
+
+        jobTitle:selectedJob.title,
+
+        company:selectedJob.company,
+
+        district:selectedJob.location,
+
+        category:selectedJob.category,
+
+        status:"Applied",
+
+        date:new Date().toLocaleString()
+
+    };
+
+
+    const applications =
+        getApplications();
+
+
+    applications.push(application);
+
+
+    localStorage.setItem(
+        "tnApplications",
+        JSON.stringify(applications)
+    );
+
+
+    await sendToGoogleSheet({
+
+        action:"application",
+
+        applicantName:
+            application.applicantName,
+
+        email:
+            application.email,
+
+        phone:
+            application.phone,
+
+        jobId:
+            application.jobId,
+
+        jobTitle:
+            application.jobTitle,
+
+        company:
+            application.company,
+
+        district:
+            application.district,
+
+        category:
+            application.category,
+
+        status:
+            application.status,
+
+        date:
+            application.date
+
+    });
+
+
+    closeModal("applyModal");
+
+    loadApplications();
+
+    showMessage(
+        "Application submitted successfully!"
+    );
+
+}
+
+
+/* =========================================================
+   LOAD APPLICATIONS
+========================================================= */
+
+function loadApplications(){
+
+    const user =
+        getCurrentUser();
+
+
+    if(!user){
+        return;
+    }
+
+
+    const applications =
+        getApplications()
+        .filter(
+            app=>app.email===user.email
+        );
+
+
+    const list =
+        document.getElementById("applicationList");
+
+
+    if(!applications.length){
+
+        list.innerHTML = `
+
+            <p>
+                You have not applied for any jobs yet.
+            </p>
+
+        `;
+
+        return;
+
+    }
+
+
+    list.innerHTML =
+        applications
+        .slice()
+        .reverse()
+        .map(app=>`
+
+            <div class="application-item">
+
+                <strong>
+                    ${escapeHTML(app.jobTitle)}
+                </strong>
+
+                <br>
+
+                ${escapeHTML(app.company)}
+
+                <br>
+
+                📍 ${escapeHTML(app.district)}
+
+                <br>
+
+                📅 ${escapeHTML(app.date)}
+
+                <br>
+
+                <span class="status">
+                    ${escapeHTML(app.status)}
+                </span>
+
+            </div>
+
+        `)
+        .join("");
+
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+function logout(){
+
+    localStorage.removeItem(
+        "tnCurrentUser"
+    );
+
+    updateAccountUI();
+
+    showMessage(
+        "You have been logged out."
+    );
+
+}
+
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+function showDashboard(){
+
+    document.getElementById("dashboard")
+        .style.display="block";
+
+    document.getElementById("dashboard")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+/* =========================================================
+   MODALS
+========================================================= */
+
+function openModal(id){
+
+    document.getElementById(id)
+        .style.display="flex";
+
+}
+
+
+function closeModal(id){
+
+    document.getElementById(id)
+        .style.display="none";
+
+}
+
+
+function switchToRegister(){
+
+    closeModal("loginModal");
+
+    openModal("registerModal");
+
+}
+
+
+function switchToLogin(){
+
+    closeModal("registerModal");
+
+    openModal("loginModal");
+
+}
+
+
+function openEmployerModal(){
+
+    const user =
+        getCurrentUser();
+
+
+    if(!user){
+
+        showMessage(
+            "Please login before posting a job."
+        );
+
+        openModal("loginModal");
+
+        return;
+
+    }
+
+
+    openModal("employerModal");
+
+}
+
+
+/* =========================================================
+   EMPLOYER JOB
+========================================================= */
+
+async function submitEmployerJob(event){
+
+    event.preventDefault();
+
+
+    const data = {
+
+        action:"employerJob",
+
+        company:
+            document.getElementById("employerCompany")
+            .value.trim(),
+
+        email:
+            document.getElementById("employerEmail")
+            .value.trim(),
+
+        jobTitle:
+            document.getElementById("employerJobTitle")
+            .value.trim(),
+
+        district:
+            document.getElementById("employerDistrict")
+            .value,
+
+        salary:
+            document.getElementById("employerSalary")
+            .value.trim(),
+
+        description:
+            document.getElementById("employerDescription")
+            .value.trim(),
+
+        date:new Date().toLocaleString()
+
+    };
+
+
+    await sendToGoogleSheet(data);
+
+
+    closeModal("employerModal");
+
+
+    document.querySelector(
+        "#employerModal form"
+    ).reset();
+
+
+    showMessage(
+        "Job posting submitted successfully!"
+    );
+
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function showMessage(message){
+
+    const toast =
+        document.getElementById("toast");
+
+
+    toast.textContent=message;
+
+    toast.style.display="block";
+
+
+    setTimeout(()=>{
+
+        toast.style.display="none";
+
+    },3000);
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMobileMenu(){
+
+    const nav =
+        document.querySelector("nav");
+
+
+    if(nav.style.display==="flex"){
+
+        nav.style.display="none";
+
+    }else{
+
+        nav.style.display="flex";
+
+        nav.style.flexDirection="column";
+
+        nav.style.position="absolute";
+
+        nav.style.top="72px";
+
+        nav.style.left="0";
+
+        nav.style.right="0";
+
+        nav.style.padding="20px";
+
+        nav.style.background="white";
+
+    }
+
+}
+
+
+/* =========================================================
+   CLOSE MODAL WHEN CLICKING OUTSIDE
+========================================================= */
+
+window.addEventListener(
+"click",
+function(event){
+
+    if(event.target.classList.contains("modal")){
+
+        event.target.style.display="none";
+
+    }
+
+});
+
+
+/* =========================================================
+   CONSOLE VERIFICATION
+========================================================= */
+
+console.log(
+    "TN JobConnect loaded successfully."
+);
+
+console.log(
+    "Total jobs:",
+    jobs.length
+);
+
+</script>
+
+</body>
+</html>
